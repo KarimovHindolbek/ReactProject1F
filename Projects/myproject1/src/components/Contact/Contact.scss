@@ -1,0 +1,83 @@
+
+.Contact{
+    background: #1A1A29;
+    padding-bottom: 157px;
+}
+.Contact_inner{
+    display: flex;
+    justify-content: space-between;
+}
+.Contact__title{
+    color: #7562E0;
+font-size: 32px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+padding-bottom: 16px;
+}
+.Contact__offer{
+    color:  #FFF;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+padding-bottom: 24px;
+}
+.contact__connect__list{
+    max-width: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .contact__connect__item{
+        i{
+            color: #7562E0;
+            width: 32px;
+        height: 32px;
+        }
+       
+    }
+}
+.Contact__information__connect{
+    button{
+        width: 174px;
+        height: 50px;
+        border-radius: 8px;
+         background: #7562E0;
+         color:  #FFF;
+         font-size: 16px;
+         font-style: normal;
+         font-weight: 500;
+         line-height: normal;
+    }
+    h3{
+        color:  #FFF;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    
+    .connect__item{
+        input{
+            width: 472px;
+            height: 42px;
+            border-radius: 8px;
+            background-color: grey;
+            margin-top: 20px;
+           
+        }      
+    }
+    .connect__big__item{
+        
+        input{
+            margin-top: 20px;
+            width: 472px;
+            height: 58px;
+            border-radius: 8px;
+            background-color: grey;
+            margin-bottom: 16px;           
+          
+        }
+    }
+ 
+}
