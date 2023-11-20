@@ -6,12 +6,12 @@ function Hero() {
     <div className='Hero' id='hero'>
       <div className="container Hero__inner">
         <div className="Hero__info">
-          <h3>Hello, i’m</h3>
-          <h2>Jayjay D. Dinero</h2>
-          <p>Freelance UI designer, Fullstack developer, & Data Miner. I create seamless web experiences for end-users.</p>
+          <h3>Hello, I am</h3>
+          <h2>Karimov Hindolbek</h2>
+          <p>Frontent Web developer</p>
           <span>
-            <button>About me <i class="bi bi-person-fill"></i></button>
-            <button>Projects <i class="bi bi-eye"></i></button>
+            <button><a href="#about">About me</a> <i class="bi bi-person-fill"></i></button>
+            <button><a href="#project">Projects</a><i class="bi bi-eye"></i></button>
           </span>
         </div>
         <div className="Hero__img">

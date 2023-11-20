@@ -1,12 +1,24 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './Header.scss'
 function Header() {
   const [active,setActive]=useState(1);
+  const [scrol,setScrol]=useState(0);
+  
+  useEffect(()=>
+    {
+      const handScroll=()=>setScrol(window.scrollY);
+      window.addEventListener('scroll',handScroll);
+      return ()=>{
+        window.removeEventListener('scroll',handScroll);
+      }
+    }
+  )
+
   return (
-    <div className='Header'>
+    <div className={scrol>=5?'Headers':'Header'}>
       <div className="container">
         <nav>
-        <a href="#" className='nav__logo'>Jayjay Dinero</a>
+        <a href="#" className='nav__logo'>Karimov Hindolbek</a>
         <ul className='nav__list'>
           <li className='nav__item'><a href="#hero" onClick={()=> setActive(1)} className={active==1?'actives':null}>Home</a></li>
           <li className='nav__item' ><a href="#about" onClick={()=> setActive(2)} className={active==2?'actives':null}>About me</a></li>
